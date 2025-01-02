@@ -25,7 +25,7 @@ function login(){
     const url = window.location.pathname;
     if(url == "/index.html"){
         if(document.getElementById("enter").value == "0539")
-            window.location.replace("enter.html");
+            window.location.replace("https://wayne-inky.vercel.app/enter.html");
         else
             document.getElementById("mensagem").textContent = "Wayne não identificado!"
         
