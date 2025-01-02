@@ -11,7 +11,7 @@ if (window.location.pathname == "/Castilla.html"){
                 timer = duration;
             }
             if(minutes == 0 && seconds == 0)
-                window.location.replace("enter.html");
+                window.location.href="enter.html";
         }, 1000);
     }
     window.onload = function () {
@@ -25,23 +25,23 @@ function login(){
     const url = window.location.pathname;
     if(url == "/index.html"){
         if(document.getElementById("enter").value == "0539")
-            window.location.replace("https://wayne-inky.vercel.app/enter.html");
+            window.location.href="enter.html";
         else
             document.getElementById("mensagem").textContent = "Wayne não identificado!"
         
     }else if (url == "/enter.html"){
         switch(document.getElementById("enter").value){
             case "Necrose":
-                window.location.replace("Necrose.html");
+                window.location.href="Necrose.html";
             break;
             case "necrose":
-                window.location.replace("Necrose.html");
+                window.location.href="Necrose.html";
             break;
             case "Castilla":
-                window.location.replace("Castilla.html");
+                window.location.href="Castilla.html";
             break;
             case "castilla":
-                window.location.replace("Castilla.html");
+                window.location.href="Castilla.html";
             break;
         }
     }
