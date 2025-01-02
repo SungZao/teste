@@ -25,7 +25,7 @@ function login(){
     const url = window.location.pathname;
     if(url == "/index.html"){
         if(document.getElementById("enter").value == "0539")
-            window.location.href="enter.html";
+            window.location.href="https://www.globo.com";
         else
             document.getElementById("mensagem").textContent = "Wayne não identificado!"
         
